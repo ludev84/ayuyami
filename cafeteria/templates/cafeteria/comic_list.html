@@ -1,0 +1,18 @@
+{% extends "cafeteria/base.html" %}
+{% block title %}Historietas | Taiyaki Ayu-Yami{% endblock %}
+
+{% block content %}
+<h1>Historietas</h1>
+<div class="comic-list">
+    {% for chapter in chapters %}
+        <a href="{% url 'comic_detail' chapter.id %}" class="comic-card">
+            {% if chapter.thumbnail %}
+                <img src="{{ chapter.thumbnail.url }}" alt="{{ chapter.title }}" class="comic-thumbnail">
+            {% endif %}
+            <div class="comic-card-content">
+                <h2>{{ chapter.title }}</h2>
+            </div>
+        </a>
+    {% endfor %}
+</div>
+{% endblock %}

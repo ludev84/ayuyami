@@ -1,0 +1,44 @@
+{% extends "cafeteria/base.html" %}
+{% block title %}{{ chapter.title }} | Taiyaki Ayu-Yami{% endblock %}
+
+{% block content %}
+<div class="comic-navigation">
+    {% if prev_chapter %}
+        <a href="{% url 'comic_detail' prev_chapter.id %}" class="nav-arrow nav-prev">
+            &larr; {{ prev_chapter.title }}
+        </a>
+    {% endif %}
+    
+    <h1>{{ chapter.title }}</h1>
+    
+    {% if next_chapter %}
+        <a href="{% url 'comic_detail' next_chapter.id %}" class="nav-arrow nav-next">
+            {{ next_chapter.title }} &rarr;
+        </a>
+    {% endif %}
+</div>
+
+<p>{{ chapter.description }}</p>
+
+<div class="comic-pages">
+    {% for page in pages %}
+        <img src="{{ page.image.url }}" alt="Página {{ page.page_number }}">
+    {% endfor %}
+</div>
+
+<div class="comic-navigation-bottom">
+    {% if prev_chapter %}
+        <a href="{% url 'comic_detail' prev_chapter.id %}" class="nav-arrow nav-prev">
+            &larr; Anterior
+        </a>
+    {% endif %}
+    
+    <a href="{% url 'comic_list' %}" class="nav-home">Lista de Historietas</a>
+    
+    {% if next_chapter %}
+        <a href="{% url 'comic_detail' next_chapter.id %}" class="nav-arrow nav-next">
+            Siguiente &rarr;
+        </a>
+    {% endif %}
+</div>
+{% endblock %}

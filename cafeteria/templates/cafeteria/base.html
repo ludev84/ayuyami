@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Taiyaki Ayu-Yami{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'cafeteria/style.css' %}">
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="/" class="nav-logo">Taiyaki Ayu-Yami</a>
+            <ul class="nav-links">
+                <li><a href="/">Historietas</a></li>
+                <!-- Add more links as needed -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Taiyaki Ayu-Yami</p>
+    </footer>
+</body>
+</html>
