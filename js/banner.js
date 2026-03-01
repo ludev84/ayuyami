@@ -6,7 +6,7 @@ class Banner extends HTMLElement {
     const text2    = this.getAttribute('data-text2')     || '';
 
     this.innerHTML = `
-      <div class="banner" style="background-color: ${bgColor};">
+      <div class="banner mb-5" style="background-color: ${bgColor};">
         <a href="/"><img class="logo-header" src="/assets/logo.webp" alt="Ayu-Yami logo" loading="eager" fetchpriority="high" decoding="sync"></a>
         <div class="banner-text">
           <div class="bubblegum title"><span class="d-inline-block flip-y">${flipChar}</span>${text1}</div>
