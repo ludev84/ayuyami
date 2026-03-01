@@ -4,7 +4,7 @@ class BannerFull extends HTMLElement {
 
     this.innerHTML = `
       <div class="banner" style="background-color: ${bgColor};">
-        <a href="/"><img class="logo-header" src="/assets/logo.webp" alt="Ayu-Yami logo" loading="eager" fetchpriority="high" decoding="sync"></a>
+        <a href=""><img class="logo-header" src="assets/logo.webp" alt="Ayu-Yami logo" loading="eager" fetchpriority="high" decoding="sync"></a>
       </div>
     `;
   }

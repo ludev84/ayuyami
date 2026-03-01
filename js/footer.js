@@ -10,7 +10,7 @@ class Footer extends HTMLElement {
         </div>
         <div class="footer-icons">
           <div class="footer-brand">
-            <a href="/" class="footer-link"><img src="/assets/icon-ayu-yami.webp" alt="Ayu-Yami icon" width="30" height="auto"></a>
+            <a href="" class="footer-link"><img src="assets/icon-ayu-yami.webp" alt="Ayu-Yami icon" width="30" height="auto"></a>
             <span class="text-secondary">${year} Taiyaki Ayu-Yami</span>
           </div>
 

@@ -41,19 +41,19 @@ class Header extends HTMLElement {
         </svg>
 
         <nav class="site-nav">
-          <a class="nav-brand" href="/">
-            <img src="/assets/icon-ayu-yami.webp" alt="Ayu-Yami icon" width="30" height="30" loading="eager" fetchpriority="high" decoding="sync">
+          <a class="nav-brand" href="">
+            <img src="assets/icon-ayu-yami.webp" alt="Ayu-Yami icon" width="30" height="30" loading="eager" fetchpriority="high" decoding="sync">
             Taiyaki Ayu-Yami
           </a>
           <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
             <span></span><span></span><span></span>
           </button>
           <ul class="nav-links">
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/sucursales">Sucursales</a></li>
-            <li><a href="/conocenos">Conócenos</a></li>
-            <li><a href="/comics">Historietas</a></li>
-            <li><a href="/menu">Menú</a></li>
+            <li><a href="">Inicio</a></li>
+            <li><a href="sucursales">Sucursales</a></li>
+            <li><a href="conocenos">Conócenos</a></li>
+            <li><a href="comics">Historietas</a></li>
+            <li><a href="menu">Menú</a></li>
           </ul>
         </nav>
       </header>

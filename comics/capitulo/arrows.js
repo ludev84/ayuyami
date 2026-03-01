@@ -2,20 +2,20 @@ const createNavElement = function (claves, nextComicNumber) {
   if (claves[0] === '') {
     return `
       <div class="nav-arrows right">
-        <a href="../capitulo/?id=${claves[1]}"><img src="/assets/right.webp" alt="Siguiente cómic"></a>
+        <a href="../capitulo/?id=${claves[1]}"><img src="assets/right.webp" alt="Siguiente cómic"></a>
       </div>
     `;
   } else if (Number(claves[1]) === nextComicNumber) {
     return `
       <div class="nav-arrows left">
-        <a href="../capitulo/?id=${claves[0]}"><img src="/assets/left.webp" alt="Anterior cómic"></a>
+        <a href="../capitulo/?id=${claves[0]}"><img src="assets/left.webp" alt="Anterior cómic"></a>
       </div>
     `;
   } else {
     return `
       <div class="nav-arrows both">
-        <a href="../capitulo/?id=${claves[0]}"><img src="/assets/left.webp" alt="Anterior cómic"></a>
-        <a href="../capitulo/?id=${claves[1]}"><img src="/assets/right.webp" alt="Siguiente cómic"></a>
+        <a href="../capitulo/?id=${claves[0]}"><img src="assets/left.webp" alt="Anterior cómic"></a>
+        <a href="../capitulo/?id=${claves[1]}"><img src="assets/right.webp" alt="Siguiente cómic"></a>
       </div>
     `;
   }
