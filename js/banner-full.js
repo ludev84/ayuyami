@@ -1,25 +1,12 @@
 class BannerFull extends HTMLElement {
-  constructor() {
-    super();
-  }
-
   connectedCallback() {
-    let bgColor = this.getAttribute('data-bg-color');
-
-    if (!bgColor) bgColor = '#fff0';
+    const bgColor = this.getAttribute('data-bg-color') || '#fff0';
 
     this.innerHTML = `
-      <style>
-        img.logo-header:hover {
-          cursor: pointer;
-        }
-      </style>
-
-      <!-- Banner -->
-      <div class="d-flex justify-content-center align-items-center py-3" style="background-color: ${bgColor}">
-        <img onclick="goHome()" class="logo-header" src="/assets/logo.webp" alt="Ayu-Yami logo" loading="eager" fetchpriority="high" decoding="sync">
+      <div class="banner" style="background-color: ${bgColor};">
+        <a href="/"><img class="logo-header" src="/assets/logo.webp" alt="Ayu-Yami logo" loading="eager" fetchpriority="high" decoding="sync"></a>
       </div>
-    `
+    `;
   }
 }
 

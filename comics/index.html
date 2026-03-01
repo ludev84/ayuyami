@@ -12,13 +12,11 @@
   <link href="/assets/fonts/OpenSans-Regular.woff2" type="font/woff2"
     rel="preload" as="font" crossorigin>
   <link rel="stylesheet" href="/css/normalize.min.css">
-  <link rel="stylesheet" href="/css/bootstrap.css">
   <link rel="stylesheet" href="/css/style.css">
 
   <script src="/js/header.js" defer></script>
   <script src="/js/banner.js" defer></script>
   <script src="/js/footer.js" defer></script>
-  <script src="/js/functions.js" defer></script>
   <script src="index.js" defer></script>
 </head>
 <body>
@@ -32,23 +30,19 @@
 </banner-component>
 
 <main>
-  <!-- Contenido -->
-  <div class="container py-5 min-height-screen">
-
-    <div class="d-flex justify-content-end align-items-center">
-      <span class="text-body-tertiary">Cambiar orden:&nbsp;&nbsp;</span>
-      <button id="reordenarBtn" class="btn btn-info text-right"><span id="textoBtn">Más antiguos primero</span>&nbsp;<svg class="bi" width="24" height="24"><use href="#arrow-down"/></svg></button>
+  <div class="container py-5">
+    <div class="sort-controls">
+      <span class="text-muted">Cambiar orden:&nbsp;&nbsp;</span>
+      <button id="reordenarBtn" class="btn btn-info"><span id="textoBtn">Más antiguos primero</span>&nbsp;<svg width="24" height="24"><use href="#arrow-down"/></svg></button>
     </div>
 
-    <div id="cards-container" class="pt-3 row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div id="cards-container" class="cards-grid pt-3">
       <!-- Insertar cards por script desde archivo JSON -->
     </div>
-    
   </div>
 </main>
 
 <footer-component></footer-component>
 
-<script src="/js/bootstrap.bundle.js"></script>
 </body>
 </html>
