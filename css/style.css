@@ -139,6 +139,10 @@ nav.site-nav {
   border-radius: .5rem .5rem .5rem .5rem;
 }
 
+.banner-full {
+  border-radius: 0 0 0 0;
+}
+
 .banner-text {
   text-align: center;
 }
